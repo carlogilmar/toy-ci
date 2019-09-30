@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Getting Dependencies') {
             steps {
-                echo 'Building..'
-                bash '''#!/bin/bash
+                echo 'Running bash..'
+                sh '''#!/bin/bash
                 echo "hello world"
                 pwd
                 uname -a
