@@ -5,7 +5,8 @@ pipeline {
         stage('Getting Dependencies') {
             steps {
                 echo 'Building..'
-                mix deps.get
+                pwd
+                uname -a
             }
         }
         stage('Test') {
