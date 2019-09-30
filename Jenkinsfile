@@ -5,8 +5,11 @@ pipeline {
         stage('Getting Dependencies') {
             steps {
                 echo 'Building..'
+                bash '''#!/bin/bash
+                echo "hello world"
                 pwd
                 uname -a
+                '''
             }
         }
         stage('Test') {
