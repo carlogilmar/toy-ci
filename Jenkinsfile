@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Getting Dependencies') {
             steps {
                 echo 'Building..'
+                mix deps.get
             }
         }
         stage('Test') {
